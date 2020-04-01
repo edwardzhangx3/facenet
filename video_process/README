@@ -1,0 +1,6 @@
+1. detect face bounding box only, no embeddings so far
+
+    ./RunDetectVideo.sh, which calls detect_faces_video.py
+
+2. detect faces in video AND get embeddings, save to pickle
+    

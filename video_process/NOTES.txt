@@ -1,0 +1,28 @@
+current annotations that we have:
+
+frame_number    SVM_confidence  prediction  face_confidence embedding_distance  frame_diff_val  correcunknown   numeric_prediction  offload num_detect
+
+
+what should we ideally have:
+
+- frame_number
+- num_detect
+
+- per detection:
+    - box coordinates
+    - label prediction
+    - embedding
+    - box confidence
+    - face confidence
+
+- then use the actual persons information for the other stuff
+
+
+1. loop thru video in openCV
+
+2. detect all faces and get embeddings
+
+3. save all embeddings to pickle file
+
+4. write output video with box around faces
+
